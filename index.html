@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d2f5d6410d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Medium</title>
+</head>
+<body>
+   <div class="border-bottom-dark py-1 fixed-top menu-scroll"> <!--bu classları css dosyasında biz oluşturduk -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/logo.png" style="width: 180px;" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link menu-link" href="#">Our Story</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-link" href="#">Membership</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-link" href="#">Write</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#">Sign In</a>
+                  </li>
+                  <li class="nav-item ml-4">
+                    <a class="nav-link btn text-light menu-button" href="#">Get Started</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+       </div>
+   </div>
+
+   <div class="bg-yellow border-bottom-dark mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-7 py-5"> 
+                <h1 class="display-3"> <!--yazının boyutunu değiştirdik-->
+                    Where good ideas <br> find you
+                </h1>
+                <p class="lead mt-5"> <!-- yazıya font size eklemek için class-->
+                    Read and share new perspectives on just about any topic. Everyone’s welcome. 
+                    <a href="#" class="text-dark "><u>Learn more.</u></a> <!-- u tag ile yazıya underline ekledik-->
+                </p>
+                <a href="#" class="btn slider-button">Get Started</a>
+            </div>
+            <div class="d-none d-md-block col-md-5 py-4">
+                <img src="/assets/slider.png"  class="float-right" style="width: 380px;" alt="">
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <div class="container mt-5 border-dark pt-3">
+       <div class="row">
+           <div class="col-12 mb-2">
+              <h6><i class="fas fa-rocket"></i><span class="ml-2">TRENDING ON MEDIUM</span></h6>
+           </div>
+           <article class="col-sm-4 mb-2">
+               <div class="row">
+                   <div class="col-2">
+                       <h6 class="trending-number">01</h6>
+                    </div>
+                   <div class="col-10">
+                       <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                       <span class="small ml-1">Susan Orlean</span>
+                       <h6 class="mt-2">
+                           <strong>The Unexpected Pleasures of Wearing a Mask</strong>
+                       </h6>
+                       <ul class="list-inline small">
+                           <li class="list-inline-item">May 11</li>
+                           <li class="list-inline-item">·</li>
+                           <li class="list-inline-item">3 min read</li>
+                           <li class="list-inline-item">
+                               <i class="fas fa-star"></i>
+                           </li>
+                       </ul>
+                    </div>
+               </div>
+           </article>
+           <article class="col-sm-4 mb-2">
+            <div class="row">
+                <div class="col-2">
+                    <h6 class="trending-number">02</h6>
+                 </div>
+                <div class="col-10">
+                    <img class="rounded-circle" src="https://picsum.photos/id/11/25/25" alt="">
+                    <span class="small ml-1">Nelly
+                        <small class="text-muted">in</small>
+                        Discord Blog
+                    </span>
+                    <h6 class="mt-2">
+                        <strong>Announcing our Latest Profile Badge: the Certified Discord Moderator</strong>
+                    </h6>
+                    <ul class="list-inline small">
+                        <li class="list-inline-item">Apr 5</li>
+                        <li class="list-inline-item">·</li>
+                        <li class="list-inline-item">6 min read</li>
+                        <li class="list-inline-item">
+                            <i class="fas fa-star"></i>
+                        </li>
+                    </ul>
+                 </div>
+            </div>
+           </article>
+           <article class="col-sm-4 mb-2">
+                <div class="row">
+                    <div class="col-2">
+                        <h6 class="trending-number">03</h6>
+                    </div>
+                    <div class="col-10">
+                        <img class="rounded-circle" src="https://picsum.photos/id/13/25/25" alt="">
+                        <span class="small ml-1">Soner Yıldırım
+                            <small class="text-muted">in</small>
+                            Data Science
+                        </span>
+                        <h6 class="mt-2">
+                            <strong>3 Mistakes to Avoid While Learning Data Science</strong>
+                        </h6>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Dec 1</li>
+                            <li class="list-inline-item">·</li>
+                            <li class="list-inline-item">6 min read</li>
+                            <li class="list-inline-item">
+                                <i class="fas fa-star"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           </article>
+           <article class="col-sm-4 mb-2">
+                <div class="row">
+                    <div class="col-2">
+                        <h6 class="trending-number">04</h6>
+                    </div>
+                    <div class="col-10">
+                        <img class="rounded-circle" src="https://picsum.photos/id/16/25/25" alt="">
+                        <span class="small ml-1">Atibhi Agrawal</span>
+                        <h6 class="mt-2">
+                            <strong>My Twitter Interview Experience</strong>
+                        </h6>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Dec 1</li>
+                            <li class="list-inline-item">·</li>
+                            <li class="list-inline-item">6 min read</li>
+                            <li class="list-inline-item">
+                                <i class="fas fa-star"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           </article>
+           <article class="col-sm-4 mb-2">
+                <div class="row">
+                    <div class="col-2">
+                        <h6 class="trending-number">05</h6>
+                    </div>
+                    <div class="col-10">
+                        <img class="rounded-circle" src="https://picsum.photos/id/25/25/25" alt="">
+                        <span class="small ml-1">Dmitrii Eliuseev</span>
+                        <h6 class="mt-2">
+                            <strong>HowTo: Running the 1G Analog Phone from 1997</strong>
+                        </h6>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Sep 19</li>
+                            <li class="list-inline-item">·</li>
+                            <li class="list-inline-item">10 min read</li>
+                            <li class="list-inline-item">
+                                <i class="fas fa-star"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           </article>
+           <article class="col-sm-4 mb-2">
+                <div class="row">
+                    <div class="col-2">
+                        <h6 class="trending-number">06</h6>
+                    </div>
+                    <div class="col-10">
+                        <img class="rounded-circle" src="https://picsum.photos/id/41/25/25" alt="">
+                        <span class="small ml-1">Admiral_Cloudberg</span>
+                        <h6 class="mt-2">
+                            <strong>Invisible Peril: The crash of Palair Macedonian Airlines flight 301</strong>
+                        </h6>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">June 5</li>
+                            <li class="list-inline-item">·</li>
+                            <li class="list-inline-item">7 min read</li>
+                            <li class="list-inline-item">
+                                <i class="fas fa-star"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           </article>
+       </div>
+   </div> 
+ 
+   <div class="border-top-dark mt-5">
+       <div class="container">
+        <div class="row mt-5">
+            <section class="col-sm-8">
+                <article class="row mb-3">
+                    <div class="col-8">
+                       <img class="rounded-circle" src="https://picsum.photos/id/21/25/25" alt="">
+                       <span class="small ml-1">Whet Moser</span>
+                       <h4 class="mt-2">
+                           <strong>Our Climate Change</strong>
+                       </h4>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, facilis?</p>
+                       <ul class="list-inline small">
+                         <li class="list-inline-item">Dec 1</li>
+                         <li class="list-inline-item">·</li>
+                         <li class="list-inline-item">6 min read</li>
+                         <li class="list-inline-item">
+                             <i class="fas fa-star"></i>
+                         </li>
+                         <li class="list-inline-item float-right"><i class="far fa-bookmark" aria-hidden="true"></i></li>
+                     </ul>
+                     </div>
+                    <div class="col-4">
+                        <img class="w-100" src="https://picsum.photos/id/22/400/250" alt="">
+                    </div>
+                </article>
+                <article class="row mb-3">
+                 <div class="col-8">
+                    <img class="rounded-circle" src="https://picsum.photos/id/23/25/25" alt="">
+                    <span class="small ml-1">Jeremy Hillegar</span>
+                    <h4 class="mt-2">
+                        <strong>Dont Crack Compliment</strong>
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, facilis?</p>
+                    <ul class="list-inline small">
+                      <li class="list-inline-item">Apr 21</li>
+                      <li class="list-inline-item">·</li>
+                      <li class="list-inline-item">6 min read</li>
+                      <li class="list-inline-item">
+                          <i class="fas fa-star"></i>
+                      </li>
+                      <li class="list-inline-item float-right"><i class="far fa-bookmark" aria-hidden="true"></i></li>
+                  </ul>
+                  </div>
+                 <div class="col-4">
+                     <img class="w-100" src="https://picsum.photos/id/24/400/250" alt="">
+                 </div>
+                </article>
+                <article class="row mb-3">
+                 <div class="col-8">
+                    <img class="rounded-circle" src="https://picsum.photos/id/11/25/25" alt="">
+                    <span class="small ml-1">Isvari
+                        <small class="text-muted">in</small>
+                        Discord Blog
+                    </span>
+                    <h4 class="mt-2">
+                        <strong>Western Culture</strong>
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, facilis?</p>
+                    <ul class="list-inline small">
+                      <li class="list-inline-item">July 11</li>
+                      <li class="list-inline-item">·</li>
+                      <li class="list-inline-item">6 min read</li>
+                      <li class="list-inline-item">
+                          <i class="fas fa-star"></i>
+                      </li>
+                      <li class="list-inline-item float-right"><i class="far fa-bookmark" aria-hidden="true"></i></li>
+                  </ul>
+                  </div>
+                 <div class="col-4">
+                     <img class="w-100" src="https://picsum.photos/id/15/400/250" alt="">
+                 </div>
+                </article>
+                <article class="row mb-3">
+                    <div class="col-8">
+                       <img class="rounded-circle" src="https://picsum.photos/id/25/25/25" alt="">
+                       <span class="small ml-1">Whet Moser</span>
+                       <h4 class="mt-2">
+                           <strong>Our Climate Change</strong>
+                       </h4>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, facilis?</p>
+                       <ul class="list-inline small">
+                         <li class="list-inline-item">Sep 1</li>
+                         <li class="list-inline-item">·</li>
+                         <li class="list-inline-item">6 min read</li>
+                         <li class="list-inline-item">
+                             <i class="fas fa-star"></i>
+                         </li>
+                         <li class="list-inline-item float-right"><i class="far fa-bookmark" aria-hidden="true"></i></li>
+                     </ul>
+                     </div>
+                    <div class="col-4">
+                        <img class="w-100" src="https://picsum.photos/id/26/400/250" alt="">
+                    </div>
+                </article>
+                <article class="row mb-3">
+                 <div class="col-8">
+                    <img class="rounded-circle" src="https://picsum.photos/id/27/25/25" alt="">
+                    <span class="small ml-1">Jeremy Hillegar</span>
+                    <h4 class="mt-2">
+                        <strong>Dont Crack Compliment</strong>
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, facilis?</p>
+                    <ul class="list-inline small">
+                      <li class="list-inline-item">Dec 1</li>
+                      <li class="list-inline-item">·</li>
+                      <li class="list-inline-item">6 min read</li>
+                      <li class="list-inline-item">
+                          <i class="fas fa-star"></i>
+                      </li>
+                      <li class="list-inline-item float-right"><i class="far fa-bookmark" aria-hidden="true"></i></li>
+                  </ul>
+                  </div>
+                 <div class="col-4">
+                     <img class="w-100" src="https://picsum.photos/id/28/400/250" alt="">
+                 </div>
+                </article>
+                <article class="row mb-3">
+                 <div class="col-8">
+                    <img class="rounded-circle" src="https://picsum.photos/id/29/25/25" alt="">
+                    <span class="small ml-1">Isvari
+                        <small class="text-muted">in</small>
+                        Discord Blog
+                    </span>
+                    <h4 class="mt-2">
+                        <strong>Western Culture</strong>
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, facilis?</p>
+                    <ul class="list-inline small">
+                      <li class="list-inline-item">Dec 1</li>
+                      <li class="list-inline-item">·</li>
+                      <li class="list-inline-item">6 min read</li>
+                      <li class="list-inline-item">
+                          <i class="fas fa-star"></i>
+                      </li>
+                      <li class="list-inline-item float-right"><i class="far fa-bookmark" aria-hidden="true"></i></li>
+                  </ul>
+                  </div>
+                 <div class="col-4">
+                     <img class="w-100" src="https://picsum.photos/id/30/400/250" alt="">
+                 </div>
+                </article>
+            </section>
+            <aside class="col-sm-4">
+                <h6>
+                    <small>
+                        <strong>DISCOVER MORE OF WHAT MATTERS TO YOU</strong>
+                    </small>
+                 </h6>
+                <ul class="list-inline">
+                     <li class="list-inline-item mb-3">
+                         <a href="" class="btn btn-sm discover-button">Self</a>
+                     </li>
+                     <li class="list-inline-item mb-3">
+                         <a href="" class="btn btn-sm discover-button">Relationships</a>
+                     </li>
+                     <li class="list-inline-item mb-3">
+                         <a href="" class="btn btn-sm discover-button">Science</a>
+                     </li>      
+                     <li class="list-inline-item mb-3">
+                         <a href="" class="btn btn-sm discover-button">Programming</a>
+                     </li>
+                     <li class="list-inline-item mb-3">
+                         <a href="" class="btn btn-sm discover-button">Javascript</a>
+                     </li>
+                     <li class="list-inline-item mb-3">
+                         <a href="" class="btn btn-sm discover-button">Health</a>
+                     </li>      
+                     <li class="list-inline-item mb-3">
+                         <a href="" class="btn btn-sm discover-button">Politics</a>
+                     </li>
+                     <li class="list-inline-item mb-3">
+                         <a href="" class="btn btn-sm discover-button">Travel</a>
+                     </li>
+                     <li class="list-inline-item mb-3">
+                         <a href="" class="btn btn-sm discover-button">Life</a>
+                     </li>                
+                </ul>
+            </aside>
+        </div>
+       </div>
+   </div>
+
+  <script src="app.js"></script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
